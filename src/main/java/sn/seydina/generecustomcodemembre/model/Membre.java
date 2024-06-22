@@ -19,6 +19,12 @@ public class Membre {
     @Enumerated(EnumType.STRING)
     private EnumSexe sexe;
 
+    private String prenom;
+    private String nom;
+    private String email;
+
     private LocalDateTime anneeAdhesion;
+
+    @Column(unique = true)
     private String code;
 }
